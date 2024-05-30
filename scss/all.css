@@ -1,0 +1,417 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Noto Sans, sans-serif;
+}
+body img {
+  display: block;
+}
+body a {
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.navbar {
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  border-bottom: 1px solid #f1f1f1;
+  align-items: center;
+  justify-content: start;
+}
+.navbar .menu {
+  display: none;
+}
+.navbar .navbar-list {
+  display: flex;
+  align-items: center;
+  margin: 32px 0px 32px 318px;
+}
+.navbar .navbar-list .navbar-list-item {
+  padding: 4px 8px;
+  margin-right: 40px;
+  text-align: center;
+}
+.navbar .navbar-list .navbar-list-item a {
+  color: #000;
+  line-height: 24px;
+  padding: 4px 8px;
+  position: relative;
+}
+.navbar .navbar-list .navbar-list-item a:hover {
+  font-weight: 600;
+}
+.navbar .navbar-list .navbar-list-item a .border_corner {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.navbar .navbar-list .navbar-list-item a .border-corner-top-left {
+  border-left: 3px solid #919191;
+  border-top: 3px solid #919191;
+  left: 0;
+}
+.navbar .navbar-list .navbar-list-item a .border-corner-top-right {
+  border-right: 3px solid #919191;
+  border-top: 3px solid #919191;
+  right: 0;
+}
+.navbar .navbar-list .navbar-list-item a .border-corner-bottom-left {
+  border-left: 3px solid #919191;
+  border-bottom: 3px solid #919191;
+  left: 0;
+  bottom: 0;
+}
+.navbar .navbar-list .navbar-list-item a .border-corner-bottom-right {
+  border-right: 3px solid #919191;
+  border-bottom: 3px solid #919191;
+  right: 0;
+  bottom: 0;
+}
+.navbar .navbar-list .navbar-list-item :hover .border_corner {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar .navbar-list {
+    margin-left: 0;
+  }
+  .navbar .navbar-list .navbar-list-item {
+    margin: 0;
+  }
+}
+@media (max-width: 375px) {
+  .navbar {
+    width: 90%;
+    height: auto;
+  }
+  .navbar .menu {
+    display: block;
+    position: relative;
+  }
+  .navbar .menu .close {
+    display: none;
+  }
+  .navbar .navbar-list {
+    display: block;
+    width: 95%;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+  .navbar .navbar-list .navbar-list-item {
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 10px;
+  }
+  .navbar .menu-close {
+    display: none;
+  }
+}
+.header {
+  background-color: #fafafa;
+}
+.header .header-content {
+  max-width: 670px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.header .header-content h2 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #1E1E1E;
+}
+.header .header-content .icon-l {
+  font-size: 50px;
+  color: #e9e9e9;
+  display: block;
+}
+.header .header-content .icon-r {
+  font-size: 50px;
+  color: #e9e9e9;
+  display: block;
+  text-align: right;
+}
+.header .header-content ul {
+  margin-top: 24px;
+  display: flex;
+}
+.header .header-content ul li {
+  text-align: center;
+  margin-right: 40px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.header .header-content ul li h4 {
+  color: #5b5b5b;
+}
+.header .header-content ul li p {
+  margin-top: 8px;
+  color: #3b3b3b;
+}
+
+@media (max-width: 375px) {
+  .header .header-content {
+    width: 80%;
+  }
+  .header .header-content .icon-l {
+    text-align: center;
+  }
+  .header .header-content .icon-r {
+    text-align: center;
+  }
+  .header .header-content ul {
+    margin-top: 40px;
+    display: block;
+  }
+  .header .header-content ul li {
+    max-width: 235px;
+    padding-top: 20px;
+    margin-right: 0px;
+    margin: 0 auto;
+  }
+}
+.project-list {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.project-list ul {
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project-list ul .project-list-item {
+  width: 49%;
+  margin-bottom: 80px;
+}
+.project-list ul .project-list-item a img {
+  width: 100%;
+  border-radius: 8px;
+  bottom: 1px soild #F1F1F1;
+}
+.project-list ul .project-list-item a .list-detail {
+  margin-left: 16px;
+  margin-top: 24px;
+}
+.project-list ul .project-list-item a .list-detail h3 {
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #3B3B3B;
+  line-height: 33.6px;
+  padding: 0;
+}
+.project-list ul .project-list-item a .list-detail p {
+  color: #919191;
+  line-height: 24px;
+}
+.project-list ul .project-list-item a .list-detail .tag-list {
+  margin-top: 24px;
+  display: flex;
+  justify-content: start;
+}
+.project-list ul .project-list-item a .list-detail .tag-list li {
+  margin-right: 10px;
+  background: #F1F1F1;
+  color: #3B3B3B;
+  border-radius: 16px;
+  text-align: center;
+  padding: 12px 4px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+  }
+  .project-list {
+    width: 94%;
+    margin: 0 auto;
+  }
+  .project-list ul {
+    display: block;
+  }
+  .project-list ul .project-list-item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .project-list ul .project-list-item a .list-detail .tag-list {
+    width: 100%;
+  }
+}
+.clearfix {
+  clear: both;
+}
+
+.pagination {
+  margin-bottom: 120px;
+}
+.pagination ul {
+  display: flex;
+  justify-content: center;
+}
+.pagination ul li {
+  text-align: center;
+}
+.pagination ul li a {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0px 12px;
+  border-radius: 4px;
+  color: #3B3B3B;
+}
+.pagination ul li a:hover {
+  background: #000;
+  color: #FFFFFF;
+}
+
+@media (max-width: 375px) {
+  .pagination {
+    margin-bottom: 80px;
+  }
+}
+.footer {
+  overflow: hidden;
+  background-color: #fafafa;
+  height: 424px;
+  position: relative;
+}
+.footer .info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 80px;
+}
+.footer .info .info-content h3 {
+  font-weight: bold;
+  margin-bottom: 24px;
+  font-size: 50px;
+}
+.footer .info .info-content p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #3B3B3B;
+}
+.footer .info .info-content a {
+  font-size: 20px;
+  line-height: 24px;
+  color: #919191;
+  display: block;
+  padding-top: 24px;
+}
+.footer .info ul {
+  z-index: 3;
+}
+.footer .info ul li {
+  width: 306px;
+  height: 72px;
+  border: 1px solid #C1C1C1;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fff;
+  color: #3B3B3B;
+}
+.footer .info ul li:hover {
+  background-color: #000;
+  color: #FFFFFF;
+}
+.footer .info ul li .item {
+  display: flex;
+  padding-left: 8px 8px 8px 24px;
+}
+.footer .info ul li .item .icon {
+  font-size: 56px;
+  padding: 8px 24px;
+  display: block;
+}
+.footer .info ul li .item p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  padding-top: 21px;
+}
+
+@media (max-width: 375px) {
+  .footer {
+    height: auto;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+  }
+  .footer .info {
+    display: block;
+    text-align: center;
+  }
+  .footer .info ul {
+    width: 81%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}/*# sourceMappingURL=all.css.map */
