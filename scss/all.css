@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,6 +53,552 @@ table {
   border-spacing: 0;
 }
 
+.header {
+  position: relative;
+  z-index: 0;
+}
+.header .introduce {
+  width: 67.5%;
+  margin: 0 auto;
+  padding: 248px 0px;
+}
+.header .introduce h2 {
+  color: #3b3b3b;
+  line-height: 48px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.header .introduce p {
+  color: #5b5b5b;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 8px;
+}
+.header .introduce p .UI-underline {
+  position: relative;
+  line-height: 24px;
+}
+.header .introduce p .UI-underline::after {
+  position: absolute;
+  content: "";
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
+  width: 135px;
+  height: 8px;
+  top: 30px;
+  left: 0px;
+}
+.header .introduce p .front-underline {
+  position: relative;
+  line-height: 24px;
+}
+.header .introduce p .front-underline::after {
+  position: absolute;
+  content: "";
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
+  width: 100px;
+  height: 8px;
+  top: 30px;
+  left: 0px;
+}
+.header .introduce span {
+  color: #c1c1c1;
+  line-height: 24px;
+  font-weight: 400;
+  padding-top: 8px;
+}
+.header .introduce ul {
+  display: flex;
+  margin-top: 60px;
+}
+.header .introduce ul li {
+  padding-right: 16px;
+  display: block;
+  font-size: 36px;
+  color: #5b5b5b;
+}
+.header .hero-lg {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media (max-width: 375px) {
+  .header .introduce {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+  .header .introduce .img-hero {
+    height: 285px;
+    width: 100%;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/hero-sm.png?raw=true);
+  }
+  .header .introduce .container {
+    width: 71.5%;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .header .introduce h2 {
+    line-height: 38.4px;
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 24px;
+  }
+  .header .introduce p {
+    padding-bottom: 8px;
+  }
+  .header .introduce p .UI-underline::after {
+    width: 120px;
+    top: 40px;
+    left: -10px;
+  }
+  .header .introduce p .front-underline::after {
+    top: 40px;
+  }
+  .header .introduce span {
+    padding-top: 16px;
+  }
+  .header .introduce .icon {
+    max-width: 152px;
+    padding-top: 24px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  .header .introduce .icon ul li {
+    max-width: 40px;
+    font-size: 27px;
+  }
+  .header img {
+    display: none;
+  }
+}
+.work1 {
+  height: 800px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work1-bg.png?raw=true);
+}
+
+.work2 {
+  height: 800px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-lg.png?raw=true);
+  position: relative;
+}
+
+.work3 {
+  height: 800px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work3-bg.png?raw=true);
+  position: relative;
+}
+
+h3 {
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  width: 372px;
+  margin: 120px auto 80px;
+}
+h3 .line-img::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #c1c1c1;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+h3 .line-img::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #c1c1c1;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+h3 .dots-img::before {
+  content: "";
+  position: absolute;
+  width: 372px;
+  height: 2px;
+  background-color: #c1c1c1;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+h3 .dots-img::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #c1c1c1;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+.work-content {
+  max-width: 1295px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.work-content img {
+  width: 55%;
+  margin-right: 55px;
+  padding-top: 80px;
+}
+.work-content .work-info {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 40.6%;
+  max-height: 450px;
+  border-radius: 24px;
+  color: #FFFFFF;
+}
+.work-content .work-info .list-detail {
+  width: 84.7%;
+  margin: 0 auto;
+  color: #FFFFFF;
+  padding-top: 80px;
+  border-bottom: 1px solid #F1F1F1;
+  z-index: 3;
+}
+.work-content .work-info .list-detail h4 {
+  font-size: 28px;
+  line-height: 33.6px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.work-content .work-info .list-detail p {
+  padding-top: 8px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.work-content .work-info .list-detail .tag-list {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+.work-content .work-info .list-detail .tag-list li {
+  line-height: 24px;
+  color: #3b3b3b;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 4px 12px;
+  margin-right: 16px;
+}
+.work-content .work-info a {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  max-width: 176px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 16px 32px;
+  margin-top: 40px;
+}
+
+.work-content-right {
+  flex-direction: row-reverse;
+}
+
+.work-bg ::before {
+  background-color: rgba(10, 16, 19, 0.3137254902); /* 半透明的白色背景 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.clinic-bg ::before {
+  background-color: rgba(10, 16, 19, 0.3137254902); /* 半透明的白色背景 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 375px) {
+  .work1 {
+    height: auto;
+  }
+  .work-content {
+    width: 100%;
+    display: block;
+  }
+  .work-content img {
+    height: 295px;
+    display: block;
+    width: 72.9%;
+    margin: 0 auto;
+    padding-top: 93px;
+  }
+  .work-content .work-info {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .work-content .work-info .list-detail {
+    text-align: center;
+    padding-top: 24px;
+  }
+  .work-content .work-info .list-detail h4 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #1E1E1E;
+  }
+  .work-content .work-info .list-detail p {
+    color: #5B5B5B;
+  }
+  .work-content .work-info .list-detail .tag-list {
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+  .work-content .work-info .list-detail .tag-list li {
+    background-color: #f1f1f1;
+    margin-right: 8px;
+  }
+  .work-content .link {
+    margin-bottom: 48px;
+    margin: 0 auto;
+  }
+  .work-content .link a {
+    width: 34.1%;
+    margin: 0;
+    margin: 0 auto;
+  }
+  .work2 {
+    height: auto;
+  }
+  .work2 .work-bg .work-content {
+    display: block;
+  }
+  .work2 .work-bg .work-content .work2-img {
+    height: 390px;
+    width: 100%;
+    padding: 0;
+  }
+  .work2 .work-bg .work-content .work-info {
+    height: auto;
+  }
+  .work2 .work-bg .work-content .work-info .tag-list {
+    width: 81%;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+  .work2 .work-bg .work-content .work-info .link {
+    padding-bottom: 48px;
+  }
+  .work3 {
+    height: auto;
+  }
+  .work3 .work-content .work-info {
+    height: auto;
+  }
+  .work3 .work-content .work-info .link {
+    padding-bottom: 48px;
+  }
+  .work-bg ::before {
+    width: 0;
+  }
+  .clinic-bg ::before {
+    height: 390px;
+  }
+}
+.server {
+  height: 881px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-services-bg.png?raw=true);
+}
+.server p {
+  margin-top: 80px;
+  text-align: center;
+  color: #3b3b3b;
+  font-size: 28px;
+  line-height: 33.6px;
+  font-weight: 600;
+}
+.server ul {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1296px;
+}
+.server ul li {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/service-item-bg.png?raw=true);
+  border-radius: 16px;
+  padding: 20px 30px;
+  width: 306px;
+  height: 306px;
+  margin-right: 24px;
+}
+.server ul li .server-list-item {
+  text-align: center;
+  padding-top: 86.5px;
+}
+.server ul li img {
+  display: inline;
+}
+.server ul li p {
+  margin-top: 24px;
+  color: #fff;
+}
+.server a {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 16px 32px;
+  display: block;
+  text-align: center;
+  max-width: 276px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 121px;
+}
+
+@media (max-width: 375px) {
+  .server p {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .server {
+    height: auto;
+  }
+  .server ul {
+    display: block;
+    width: 81.6%;
+  }
+  .server ul li {
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 0;
+  }
+  .server ul li .server-list-item {
+    text-align: center;
+    padding-top: 86.5px;
+  }
+  .server ul li img {
+    display: inline;
+    max-width: 80px;
+  }
+  .server ul li p {
+    margin-top: 24px;
+    color: #fff;
+  }
+  .server-btn {
+    padding-bottom: 80px;
+  }
+  .server a {
+    display: block;
+    width: 55.4%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.article-content {
+  width: 67.5%;
+  margin: 0 auto;
+  margin-bottom: 173px;
+}
+
+.articleInfo {
+  padding: 0 4px;
+}
+
+.articleTitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.articleContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.articleContent p {
+  padding: 4px 0;
+}
+
+.articleContent p:first-child {
+  background-color: #f1f1f1;
+  padding: 4px 12px;
+  border-radius: 16px;
+}
+
+.articleImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.swiper {
+  padding-bottom: 52px;
+}
+
+.swiper-pagination {
+  display: block;
+}
+
+.swiper-pagination-bullet {
+  /* 分頁按鈕定位調整，active 時顏色為黑色 #000000 ，圓點左右間距為 16px，大小調整為 12px * 12px */
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000000;
+}
+
+.articleBtn {
+  /*   「更多文章」按鈕電腦版時隱藏 */
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    padding-bottom: 0;
+    margin-bottom: -8px;
+  }
+  .swiper-slide {
+    margin-bottom: 48px;
+  }
+  .swiper-slide:nth-child(n+4) {
+    /*     手機版時（768px 以下），從第 4 個 swiper-slide 開始之後隱藏（只留下 3 個） */
+    display: none;
+  }
+  .swiper-pagination {
+    /*     手機版時（768px 以下），分頁按鈕隱藏 */
+    display: none;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .articleBtn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 375px) {
+  .article-content {
+    width: 95%;
+  }
+}
 body {
   font-family: Noto Sans, sans-serif;
 }
@@ -155,8 +702,9 @@ body a {
     display: none;
   }
   .navbar .navbar-list {
+    z-index: 3;
     display: block;
-    width: 95%;
+    width: 100%;
     position: absolute;
     left: 0;
     top: 8px;

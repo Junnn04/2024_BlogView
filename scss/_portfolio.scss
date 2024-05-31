@@ -15,7 +15,6 @@ body{
    }
 }
 
-
 .navbar{
     max-width: 1296px;
     margin: 0 auto;
@@ -98,13 +97,15 @@ body{
     .menu{
         display: block;
         position: relative;
+        
         .close{
             display: none;
         }
     }
    .navbar-list{
+       z-index: 3;
        display: block;
-       width: 95%;
+       width: 100%;
        position: absolute;
        left: 0;
        top: 8px;
@@ -117,8 +118,7 @@ body{
     .menu-close{
         display: none;
     }
-    }
-   
+    }  
 }
 .header{
     background-color: #fafafa;
