@@ -5,6 +5,9 @@
   display: block;
 }
 
+.intro{
+  padding: 0 10%;
+}
 .intro-right{
   color: #C1C1C1;
   border-left: 1px solid #C1C1C1;
@@ -25,4 +28,30 @@
 .subtitle-p{
   color: #5b5b5b;
   text-align: center;
+}
+
+@media (max-width:650px) {
+  .intro-right{
+    color: #5b5b5b;
+    border-left: 0;
+    border-top: 1px solid #C1C1C1;
+  .intro-right-p{
+    padding-top: 24px;
+    text-align: center;
+  .intro-right-span{
+    display: block;
+    text-align: center;
+  }
+}
+}
+  .img-lg{
+    width: 100%;
+    margin-top: 40px;
+  }
+  .subtitle{
+    margin-top: 16px;
+  }
+  .subtitle-p{
+    margin-top: 8px;
+  }
 }
