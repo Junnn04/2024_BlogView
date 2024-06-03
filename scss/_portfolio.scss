@@ -90,7 +90,7 @@ body{
     }
 }
 
-@media (max-width:375px) {
+@media (max-width:650px) {
     .navbar {
         width: 90%;
         height: auto;
@@ -235,7 +235,7 @@ body{
         }
     }
 
-@media (max-width:375px) {
+@media (max-width:650px) {
     .container{
         width: 100%;
     }
@@ -316,9 +316,9 @@ body{
             padding-top: 24px;
         }
     }
-    ul{
+    .contact{
         z-index: 3;
-        li{
+        .contact-list{
             width: 306px;
             height: 72px;
             border: 1px solid #C1C1C1;
@@ -356,18 +356,20 @@ body{
 }
 }
 
-@media (max-width:375px) {
+@media (max-width:650px) {
     .footer {
         height: auto;
         background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
         .info{
     display: block;
     text-align: center;
-  ul {
+  .contact {
     padding: 0;
-    width: 81%;
-    margin: 0 auto;
     margin-top: 40px;
+    .contact-list{
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
 }
     }
 }
