@@ -62,13 +62,14 @@
       }
    }
    .hero-lg{
+    max-width: 1154px;
     position: absolute;
     right: 0;
     top: 0;
    }
 }
 
-@media (max-width:375px) {
+@media (max-width:650px) {
     .header .introduce{
           width: 100%;
           margin: 0 auto;
@@ -78,6 +79,7 @@
             height: 285px;
             width: 100%;
             background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/hero-sm.png?raw=true);
+            background-repeat: no-repeat;
           }
           .container{
             width: 71.5%;
@@ -272,7 +274,7 @@ h3{
     height: 100%;
 }
 
-@media (max-width:375px) {
+@media (max-width:650px) {
   .work1{
     height: auto;
     }
@@ -420,7 +422,7 @@ h3{
    }   
 }
 
-@media (max-width: 375px){
+@media (max-width: 650px){
     .server p{
         font-size: 20px;
         line-height: 24px;
