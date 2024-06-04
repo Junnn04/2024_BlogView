@@ -8,14 +8,13 @@
       padding: 248px 0px;
       h2{
         color: #3b3b3b;
-        line-height: 48px;
+        line-height: 1.2;
         font-size: 40px;
         font-weight: 600;
       }
       p{
         color: #5b5b5b;
         font-size: 20px;
-        line-height: 30px;
         padding-bottom: 8px;
         .UI-underline{
             position: relative;
@@ -480,7 +479,9 @@ h3{
     font-size: 20px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 16px;
+    margin: 16px 0;
+    width: 100%;
+    text-align: left;
   }
   
   .articleContent {

@@ -30,3 +30,5 @@ const swiper = new Swiper(".swiper", {
       $(".navbar-list").toggleClass("menu-close");
     })
 })
+
+
