@@ -1,0 +1,174 @@
+.server-title{
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38.4px;
+  margin-bottom: 80px;
+}
+.bg-none{
+  background-image: none;
+  padding-top: 120px;
+}
+.process{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/process-bg.png?raw=true);
+  padding-top: 80px;
+  padding-bottom: 120px; 
+  .process-title{
+    color: #fff;
+    margin-bottom: 80px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+}
+
+.process-item{
+  width: 35%;
+  margin: 0 auto;
+  padding: 0;
+.process-list{
+  padding: 24px 32px;
+  border-radius: 4px;
+  border: 1px solid #919191;
+  color: #E9E9E9;
+  background-color: #3B3B3B;
+  max-width: 655px;
+  display: flex;
+  margin-bottom: 64px;
+  position: relative;
+  .num{
+    font-size: 72px;
+    line-height: 86.4px;
+  }
+  .process-list-title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33.6px;
+    color: #fff;
+  }
+  .process-list-intro{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .next{
+    display: block;
+  }
+  .arrow{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    color: #5b5b5b;
+    font-size: 20.22px;
+  }
+}
+}
+
+.price{
+  padding: 120px 0; 
+}
+.price-item{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  .price-list{
+    background-color: #fafafa;
+    box-shadow: 8% #000;
+    display: flex;
+    padding: 32px;
+    border-radius: 8px;
+    margin-right: 24px;
+    .price-title{
+      color: #5b5b5b;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 42px;
+      margin-top: 7px;
+      position: relative;
+      &::after{
+        content: "";
+        width: 41px;
+        height: 1px;
+        background-color: #C1C1C1;
+        position: absolute;
+        top: 50%;
+        left: 120px;
+      }
+    }
+    .price-num{
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 48px;
+      color: #1e1e1e;
+      margin-left: 50px;
+      .price-span{
+        color: #5B5B5B;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-top: 7px;
+      }
+    }
+  }
+}
+
+.case{
+background-color: #fafafa;
+.case-title{
+  margin-left: 0;
+}
+}
+
+.FAQ{
+  padding: 120px 0;
+  .container-md{
+    max-width: 1072px;
+  }
+  .FAQ-item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    .FAQ-list{
+      border: 1px solid #E9E9E9;
+      border-radius: 8px;
+      padding: 24px;
+      width: 48%;
+      .FAQ-title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.8px;
+        color: #3B3B3B;
+      }
+      .FAQ-ans{
+        color: #5B5B5B;
+        line-height: 30px;
+        font-size: 20px;        
+      }
+    }
+  }
+}
+
+
+@media (max-width:768px) {
+  .process-item{
+    width: 50%;
+  }
+}
+
+@media (max-width:650px) {
+   
+  .process-item{
+    width: 94%;
+  }
+
+  .price-item{
+    display: block;
+    }
+
+  .FAQ{
+    .FAQ-item{
+      padding: 0;
+      .FAQ-list{
+        width: 100%;
+      }
+    }
+  }
+}

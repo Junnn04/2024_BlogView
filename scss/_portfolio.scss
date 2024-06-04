@@ -106,9 +106,10 @@ body{
        z-index: 3;
        display: block;
        width: 100%;
+       padding: 0;
        position: absolute;
        left: 0;
-       top: 8px;
+       top: 25px;
        .navbar-list-item{
         width: 100%;
         background-color: #fff;
