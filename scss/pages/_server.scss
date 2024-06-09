@@ -76,34 +76,30 @@
     padding: 32px;
     border-radius: 8px;
     margin-right: 24px;
+    
     .price-title{
       color: #5b5b5b;
       font-size: 28px;
       font-weight: 600;
-      line-height: 42px;
       margin-top: 7px;
-      position: relative;
-      &::after{
-        content: "";
-        width: 41px;
-        height: 1px;
-        background-color: #C1C1C1;
-        position: absolute;
-        top: 50%;
-        left: 120px;
-      }
+      // position: relative;
+      // &::after{
+      //   content: "";
+      //   width: 41px;
+      //   height: 1px;
+      //   background-color: #C1C1C1;
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 120px;
+      // }
     }
     .price-num{
       font-weight: 700;
       font-size: 32px;
-      line-height: 48px;
       color: #1e1e1e;
-      margin-left: 50px;
+      // margin-left: 50px;
       .price-span{
         color: #5B5B5B;
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 400;
         margin-top: 7px;
       }
     }
@@ -147,6 +143,19 @@ background-color: #fafafa;
 }
 
 
+@media (max-width:1240px) {
+  .price-item{
+    display: block;
+    .price-list{
+      margin-bottom: 24px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    }
+}
+
 @media (max-width:768px) {
   .process-item{
     width: 50%;
@@ -159,9 +168,7 @@ background-color: #fafafa;
     width: 94%;
   }
 
-  .price-item{
-    display: block;
-    }
+  
 
   .FAQ{
     .FAQ-item{

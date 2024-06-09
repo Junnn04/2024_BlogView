@@ -1,4 +1,7 @@
-
+.article-text{
+  display: flex;
+  
+}
 .article{
   color: #3b3b3b;
   padding-bottom: 80px;
@@ -50,13 +53,17 @@
 
 .related-articles{
   margin: 80px 0 40px 0;
-  width: 700px;
+  font-weight: 700;
   font-size: 28px;
   line-height: 1.2;
-  text-align-last: left;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1240px) {
+  .article-text{
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767px) {
   .article{
     .article-slash{
       display: none;
@@ -65,5 +72,8 @@
      display: flex;
      justify-content: space-between;
     }
+  }
+  .related-articles{
+    margin: 40px auto;
   }
 }

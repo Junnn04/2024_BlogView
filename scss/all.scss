@@ -1,7 +1,16 @@
-@import "reset";
-@import "index";
-@import "portfolio";
-@import "modal";
-@import "server";
-@import "blog";
-@import "article"
+// base
+
+@import "base/reset";
+
+
+//page
+
+@import "pages/portfolio";
+@import "pages/index";
+@import "pages/server";
+@import "pages/blog";
+@import "pages/article";
+
+//components
+
+@import "components/modal";
